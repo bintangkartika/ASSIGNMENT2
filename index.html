@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PORTOFOLIO</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#home" id="home">HOME</a></li>
+        <li><a href="#product">PRODUCT</a></li>
+        <li><a href="#gallery">GALLERY</a></li>
+        <li><a href="#blog">BLOG</a></li>
+        <li><a href="#inventory">INVENTORY</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <div class="myprofile">
+        <div class="left-side">
+          <img src="img/user.jpeg" alt="user" />
+          <div class="bio-left">
+            <div class="name-title">
+              <p id="name">Nama Anda</p>
+              <p id="title">Front End Designer</p>
+            </div>
+            <div class="button">
+              <button class="btn-edit">Edit</button>
+              <button class="btn-resume">Resume</button>
+            </div>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="bio-right">
+            <p >Availability</p>
+            <p >Usia</p>
+            <p >Lokasi</p>
+            <p >Pengalaman</p>
+            <p >Email</p>
+          </div>
+          <div>
+            <p id="availability">Full Time</p>
+            <p id="usia"> 17 </p>
+            <p id="lokasi">Jakarta, Indonesia</p>
+            <p id="pengalaman">2</p>
+            <p id="email">developer@email.com </p>
+          </div>
+        </div>
+      </div>
+      <form onsubmit="submitForm()">
+        <div>
+          <label for="masukkan nama anda">Nama</label>
+          <input type="text" name="nama" placeholder="input your name" id="input-name"/>
+        </div>
+        <br>
+        <div>
+          <label for="role">Role</label>
+          <input type="text" id="input-title" placeholder="input your role" />
+        </div>
+        <br>
+        <div>
+          <label for="availability">Availability</label>
+          <input type="text" id="input-availability" placeholder="input your availability" />
+        </div>
+        <br>
+        <div>
+          <label for="usia">Usia</label>
+          <input type="text" id="input-usia" placeholder="input your age"/>
+        </div>
+        <br>
+        <div>
+          <label for="lokasi">Lokasi</label>
+          <input type="text" id="input-lokasi" placeholder="input your location"/>
+        </div>
+        <br>
+        <div>
+          <label for="years experience">Years Experience</label>
+          <input type="text" id="input-pengalaman" placeholder="input your years of experience"/>
+        </div>
+        <br>
+        <div>
+          <label for="email">Email</label>
+          <input type="text" id="input-email" placeholder="input your email"/>
+        </div>
+        <br>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
